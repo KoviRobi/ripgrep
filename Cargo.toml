@@ -62,6 +62,11 @@ version = "2.33.0"
 default-features = false
 features = ["suggestions"]
 
+[patch.crates-io]
+regex = { git = "https://github.com/rust-lang/regex.git", branch = "ag/work" }
+regex-automata = { git = "https://github.com/rust-lang/regex.git", branch = "ag/work" }
+regex-syntax = { git = "https://github.com/rust-lang/regex.git", branch = "ag/work" }
+
 [target.'cfg(all(target_env = "musl", target_pointer_width = "64"))'.dependencies.jemallocator]
 version = "0.5.0"
 
